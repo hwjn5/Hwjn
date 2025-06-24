@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HWJN | التواصل ومعرض التلوين</title>
+    <style>
+        :root {
+            --primary: #6C5CE7;
+            --secondary: #00CEFF;
+            --dark: #2D3436;
+            --light: #F5F6FA;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Tajawal', sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+        }
+
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://via.placeholder.com/1920x400') center/cover;
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: 900;
+            margin-bottom: 1rem;
+            color: var(--secondary);
+        }
+
+        nav {
+            background-color: var(--dark);
+            padding: 1rem;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+        }
+
+        .contact-section {
+            padding: 3rem;
+            text-align: center;
+            background-color: white;
+        }
+
+        .social-links {
+            margin: 2rem 0;
+        }
+
+        .social-links a {
+            display: inline-block;
+            margin: 0 1rem;
+            padding: 0.8rem 1.5rem;
+            background-color: var(--primary);
+            color: white;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-links a:hover {
+            background-color: var(--secondary);
+            transform: translateY(-3px);
+        }
+
+        .gallery {
+            padding: 3rem;
+            background-color: var(--light);
+        }
+
+        .gallery-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        .coloring-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .coloring-item {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+        }
+
+        .coloring-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .coloring-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .coloring-item h3 {
+            padding: 1rem;
+            text-align: center;
+            color: var(--dark);
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">HWJN</div>
+        <h2>مرحباً بكم في عالم التلوين والإبداع</h2>
+    </header>
+
+    <nav>
+        <a href="#contact">تواصل معي</a>
+        <a href="#gallery">معرض التلوين</a>
+    </nav>
+
+    <section id="contact" class="contact-section">
+        <h2>تواصل معي</h2>
+        <p>يمكنك التواصل معي عبر المنصات التالية:</p>
+
+        <div class="social-links">
+            <a href="https://kunaiu.com/profile/aqua8152" target="_blank">حسابي على كونايو</a>
+            <a href="https://www.instagram.com/ribal801" target="_blank">حسابي على الإنستجرام</a>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2 class="gallery-title">معرض التلوين</h2>
+
+        <div class="coloring-grid">
+            <!-- سأضيف 20 عنصر تلوين -->
+            <div class="coloring-item">
+                <img src="/me.jpg" alt="تلوين 1">
+                <h3>تلوين 1</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+2" alt="تلوين 2">
+                <h3>تلوين 2</h3>
+            </div>
+            <!-- يمكنك إضافة المزيد من العناصر بنفس الطريقة -->
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+3" alt="تلوين 3">
+                <h3>تلوين 3</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+4" alt="تلوين 4">
+                <h3>تلوين 4</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+5" alt="تلوين 5">
+                <h3>تلوين 5</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+6" alt="تلوين 6">
+                <h3>تلوين 6</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+7" alt="تلوين 7">
+                <h3>تلوين 7</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+8" alt="تلوين 8">
+                <h3>تلوين 8</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+9" alt="تلوين 9">
+                <h3>تلوين 9</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+10" alt="تلوين 10">
+                <h3>تلوين 10</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+11" alt="تلوين 11">
+                <h3>تلوين 11</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+12" alt="تلوين 12">
+                <h3>تلوين 12</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+13" alt="تلوين 13">
+                <h3>تلوين 13</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+14" alt="تلوين 14">
+                <h3>تلوين 14</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+15" alt="تلوين 15">
+                <h3>تلوين 15</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+16" alt="تلوين 16">
+                <h3>تلوين 16</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+17" alt="تلوين 17">
+                <h3>تلوين 17</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+18" alt="تلوين 18">
+                <h3>تلوين 18</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+19" alt="تلوين 19">
+                <h3>تلوين 19</h3>
+            </div>
+            <div class="coloring-item">
+                <img src="https://via.placeholder.com/300x200?text=كتاب+20" alt="تلوين 20">
+                <h3>تلوين 20</h3>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة &copy; 2023 HWJN</p>
+    </footer>
+</body>
+
+</html>
